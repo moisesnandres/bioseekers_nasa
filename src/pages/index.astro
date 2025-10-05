@@ -1,16 +1,64 @@
 ---
-
 ---
-
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>BioSeekers NASA - Let's explore</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700;800;900&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="/src/styles/tailwind.css">
+		<link rel="stylesheet" href="/src/styles/typography.css">
+		<link rel="stylesheet" href="/src/styles/animations.css">
+		<link rel="stylesheet" href="/src/styles/space-effects.css">
 	</head>
-	<body>
-		<h1>Astro</h1>
+	<body class="font-inter bg-[#0a0a1a] text-white overflow-x-hidden min-h-screen">
+		<div class="relative min-h-screen flex flex-col justify-center items-center">
+			<div class="absolute inset-0 bg-stars animate-twinkle"></div>
+			<div class="absolute bottom-0 left-0 w-full h-[60%] bg-grid-pattern animate-grid-move"></div>
+			<div class="absolute inset-0 bg-orbital-lines"></div>
+			<div class="absolute top-[30%] right-[15%] animate-float-reverse">
+				<img src="/images/astronaut.png" alt="Astronaut" class="w-20 h-auto drop-shadow-[0_0_20px_rgba(0,255,255,0.5)]" />
+			</div>
+			<div class="absolute top-[50%] left-[15%] animate-rotate">
+				<svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+					<circle cx="20" cy="20" r="15" fill="url(#galaxyGradient)" opacity="0.8"/>
+					<defs>
+						<radialGradient id="galaxyGradient">
+							<stop offset="0%" stop-color="#ff00ff"/>
+							<stop offset="50%" stop-color="#ffff00"/>
+							<stop offset="100%" stop-color="#ff00ff"/>
+						</radialGradient>
+					</defs>
+				</svg>
+			</div>
+			<div class="absolute top-[20%] right-[20%] w-[30px] h-[30px] rounded-full bg-orb-cyan blur-[1px] animate-pulse-glow"></div>
+			<div class="absolute top-[15%] right-[10%] w-[25px] h-[25px] rounded-full bg-orb-magenta blur-[1px] animate-pulse-glow" style="animation-delay: 1s;"></div>
+			<div class="absolute bottom-[30%] left-[20%] w-[35px] h-[35px] rounded-full bg-orb-cyan blur-[1px] animate-pulse-glow" style="animation-delay: 2s;"></div>
+			<div class="absolute bottom-[20%] right-[30%] w-[28px] h-[28px] rounded-full bg-orb-magenta blur-[1px] animate-pulse-glow" style="animation-delay: 1.5s;"></div>
+			<div class="text-center z-10 relative">
+				<h1 class="mb-5">
+					<img src="/images/logo_landing.png" alt="BioSeekers Logo" class="mx-auto h-32 w-auto" />
+				</h1>
+				<h2 class="space-subtitle text-[#FFE500] mb-8">Let's explore</h2>
+				<p class="space-body text-[#cccccc] mb-10 max-w-[600px] mx-auto text-center">
+					Dive into NASA's bioscience discoveries.<br>
+					Search thousand of experiments, uncover their impact, and see how<br>
+					research can change the world.
+				</p>
+				<button class="space-button">
+					Start
+				</button>
+			</div>
+			<div class="absolute bottom-5 right-5 flex items-center gap-4 text-sm text-[#888]">
+				<span>Powered by NASA 2025</span>
+				<div>
+					<img src="/images/nasa_logo.png" alt="NASA Logo" class="w-12" />
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
