@@ -48,6 +48,23 @@ body {
   font-weight: var(--font-normal);
 }
 
+/* Ensure consistent font sizes across all pages */
+html {
+  font-size: 16px; /* Base font size */
+}
+
+/* Force consistent font family across all elements */
+*, *::before, *::after {
+  font-family: var(--font-secondary);
+}
+
+/* Override specific elements that need primary font */
+h1, h2, h3, h4, h5, h6,
+.space-title, .space-subtitle,
+.font-primary {
+  font-family: var(--font-primary);
+}
+
 /* Headings */
 h1 {
   font-family: var(--font-primary);

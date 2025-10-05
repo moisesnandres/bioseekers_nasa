@@ -1,4 +1,5 @@
 ---
+import Footer from '../components/Footer.astro';
 ---
 <html lang="en">
 	<head>
@@ -15,7 +16,7 @@
 		<link rel="stylesheet" href="/src/styles/animations.css">
 		<link rel="stylesheet" href="/src/styles/space-effects.css">
 	</head>
-	<body class="font-inter bg-[#0a0a1a] text-white overflow-x-hidden min-h-screen">
+	<body class="space-container text-white overflow-x-hidden min-h-screen overflow-y-auto">
 		<div class="relative min-h-screen flex flex-col justify-center items-center">
 			<div class="absolute inset-0 bg-stars animate-twinkle"></div>
 			<div class="absolute bottom-0 left-0 w-full h-[60%] bg-grid-pattern animate-grid-move"></div>
@@ -49,16 +50,11 @@
 					Search thousand of experiments, uncover their impact, and see how<br>
 					research can change the world.
 				</p>
-				<button class="space-button">
+				<a href="/profile" class="space-button inline-block">
 					Start
-				</button>
+				</a>
 			</div>
-			<div class="absolute bottom-5 right-5 flex items-center gap-4 text-sm text-[#888]">
-				<span>Powered by NASA 2025</span>
-				<div>
-					<img src="/images/nasa_logo.png" alt="NASA Logo" class="w-12" />
-				</div>
-			</div>
+			<Footer />
 		</div>
 	</body>
 </html>

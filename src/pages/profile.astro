@@ -1,0 +1,83 @@
+---
+import Footer from '../components/Footer.astro';
+---
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Select your profile - BioSeekers NASA</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700;800;900&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="/src/styles/tailwind.css">
+		<link rel="stylesheet" href="/src/styles/typography.css">
+		<link rel="stylesheet" href="/src/styles/animations.css">
+		<link rel="stylesheet" href="/src/styles/space-effects.css">
+	</head>
+	<body class="space-container text-white overflow-x-hidden min-h-screen overflow-y-auto">
+		<div class="relative min-h-screen flex flex-col">
+			<!-- Header -->
+			<div class="flex items-center justify-between p-6 relative z-20">
+				<a href="/" class="flex items-center gap-2 text-white hover:text-[#FFE500] transition-colors cursor-pointer">
+					<svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+						<path d="M12.5 15L7.5 10L12.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+					<span>Go back</span>
+				</a>
+			</div>
+			<!-- Background Elements -->
+			<div class="absolute inset-0 bg-stars animate-twinkle"></div>
+			<div class="absolute bottom-0 left-0 w-full h-[60%] bg-grid-pattern animate-grid-move"></div>
+			<div class="absolute inset-0 bg-orbital-lines"></div>
+			<!-- Main Content -->
+			<div class="content-container flex-1 flex flex-col justify-center items-center px-6 relative z-10">
+				<div class="text-center mb-12">
+					<h2 class="space-title text-[#FFE500] mb-4">Select your profile</h2>
+					<p class="space-body text-white">Let's personalized your search</p>
+				</div>
+				<!-- Profile Cards -->
+				<div class="w-full max-w-md space-y-4">
+					<!-- Scientists Profile -->
+					<div class="space-button cursor-pointer group hover:scale-105 transition-transform">
+						<div class="flex items-center gap-4 p-6">
+							<div class="w-16 h-16 flex-shrink-0">
+								<img src="/images/scientist.png" alt="Scientist" class="w-full h-full object-cover rounded-full border-2 border-[#FFE500]" />
+							</div>
+							<div class="flex-1">
+								<h3 class="text-xl font-bold text-white mb-2">Scientists</h3>
+								<p class="text-sm text-gray-300">Generate new hypotheses and uncover hidden insights in NASA bioscience data.</p>
+							</div>
+						</div>
+					</div>
+					<!-- Manager Profile -->
+					<div class="space-button cursor-pointer group hover:scale-105 transition-transform">
+						<div class="flex items-center gap-4 p-6">
+							<div class="w-16 h-16 flex-shrink-0">
+								<img src="/images/manager.png" alt="Manager" class="w-full h-full object-cover rounded-full border-2 border-[#FFE500]" />
+							</div>
+							<div class="flex-1">
+								<h3 class="text-xl font-bold text-white mb-2">Manager</h3>
+								<p class="text-sm text-gray-300">Identify investment opportunities and track emerging areas of scientific progress.</p>
+							</div>
+						</div>
+					</div>
+					<!-- Mission Architects Profile -->
+					<div class="space-button cursor-pointer group hover:scale-105 transition-transform">
+						<div class="flex items-center gap-4 p-6">
+							<div class="w-16 h-16 flex-shrink-0">
+								<img src="/images/astronaut_with_flag.png" alt="Mission Architect" class="w-full h-full object-cover rounded-full border-2 border-[#FFE500]" />
+							</div>
+							<div class="flex-1">
+								<h3 class="text-xl font-bold text-white mb-2">Mission Architects</h3>
+								<p class="text-sm text-gray-300">Explore bioscience findings that enable safer, more efficient Moon and Mars missions.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<Footer />
+		</div>
+	</body>
+</html>

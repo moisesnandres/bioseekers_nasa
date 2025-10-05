@@ -90,7 +90,9 @@
   background: linear-gradient(135deg, #0a0a1a, #1a1a2e);
   min-height: 100vh;
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-family: var(--font-secondary);
 }
 
 /* Floating elements */
@@ -116,5 +118,28 @@
   
   .floating-element {
     display: none;
+  }
+}
+
+/* Content padding for different window heights */
+.content-container {
+  padding: 2rem 1rem;
+  min-height: calc(100vh - 4rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-height: 800px) {
+  .content-container {
+    padding: 1rem 1rem;
+    min-height: calc(100vh - 2rem);
+  }
+}
+
+@media (max-height: 600px) {
+  .content-container {
+    padding: 0.5rem 1rem;
+    min-height: calc(100vh - 1rem);
   }
 }
