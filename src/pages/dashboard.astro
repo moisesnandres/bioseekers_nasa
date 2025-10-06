@@ -1,0 +1,111 @@
+---
+import Footer from '../components/Footer.astro';
+---
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Dashboard - BioSeekers NASA</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700;800;900&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="/styles/tailwind.css">
+		<link rel="stylesheet" href="/styles/typography.css">
+		<link rel="stylesheet" href="/styles/animations.css">
+		<link rel="stylesheet" href="/styles/space-effects.css">
+	</head>
+	<body class="space-container text-white overflow-x-hidden min-h-screen overflow-y-auto">
+		<div class="flex min-h-screen">
+			<!-- Left Sidebar -->
+			<div class="w-64 bg-[#1a1a2e] border-r border-[#333] flex flex-col">
+				<!-- Logo -->
+				<div class="p-6 border-b border-[#333]">
+          <img src="/images/logo_landing.png" alt="BioSeekers Logo" class="h-6 w-auto" />
+				</div>
+				<!-- Navigation Menu -->
+				<nav class="flex-1 p-4 space-y-2">
+					<div class="space-y-1">
+						<div class="flex items-center gap-3 text-white hover:text-[#FFE500] cursor-pointer">
+							<svg width="18" height="18" viewBox="0 0 24 24" fill="none" class="text-[#FFE500]">
+								<path d="M21 21L16.514 16.506L21 21ZM19 10.5C19 15.194 15.194 19 10.5 19C5.806 19 2 15.194 2 10.5C2 5.806 5.806 2 10.5 2C15.194 2 19 5.806 19 10.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+							<span>Search</span>
+						</div>
+						<div class="flex items-center gap-3 text-white hover:text-[#FFE500] cursor-pointer">
+							<svg width="18" height="18" viewBox="0 0 24 24" fill="none" class="text-[#FFE500]">
+								<path d="M14 2H6C4.895 2 4 2.895 4 4V20C4 21.105 4.895 22 6 22H18C19.105 22 20 21.105 20 20V8L14 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M14 2V8H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M16 13H8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M16 17H8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M10 9H8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+							<span>Documents</span>
+						</div>
+						<div class="flex items-center gap-3 text-white hover:text-[#FFE500] cursor-pointer">
+							<svg width="18" height="18" viewBox="0 0 24 24" fill="none" class="text-[#FFE500]">
+								<circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+								<path d="M9.09 9C9.325 8.331 9.789 7.812 10.4 7.4C11.011 6.988 11.73 6.8 12.5 6.8C13.27 6.8 13.989 6.988 14.6 7.4C15.211 7.812 15.675 8.331 15.91 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M12 17H12.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+							<span>Q & A</span>
+						</div>
+					</div>
+				</nav>
+				<!-- User Profile -->
+				<div class="p-4 border-t border-[#333]">
+					<div class="flex items-center gap-3">
+						<div class="w-8 h-8 bg-gradient-to-br from-[#FFE500] to-[#FFA500] rounded-full flex items-center justify-center">
+							<span class="text-black font-bold text-sm">U</span>
+						</div>
+						<div>
+							<div class="text-white text-sm font-medium">User Profile</div>
+							<div class="text-gray-400 text-xs">Scientist</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Main Content -->
+			<div class="flex-1 bg-[#0a0a1a] relative">
+				<!-- Background Elements -->
+				<div class="absolute inset-0 bg-stars animate-twinkle opacity-30"></div>
+				<div class="absolute bottom-0 left-0 w-full h-[40%] bg-grid-pattern animate-grid-move opacity-20"></div>
+				<!-- Content -->
+				<div class="relative z-10 p-8">
+					<!-- Header -->
+					<div class="mb-8">
+						<h1 class="space-title text-[#FFE500] mb-4">What are you interested to explore today?</h1>
+					</div>
+					<!-- Search Section -->
+					<div class="mb-8">
+						<div class="w-full flex gap-4">
+							<input
+								type="text"
+								placeholder="Write what you want to search or learn as a scientist..."
+								class="flex-1 p-4 bg-transparent border-2 border-white rounded-lg text-white placeholder-gray-400 focus:border-[#FFE500] focus:outline-none"
+							/>
+							<button class="space-button px-8 py-3 flex-shrink-0" id="searchButton">
+								Search
+							</button>
+						</div>
+					</div>
+					<!-- Search Results -->
+					<div id="searchResults" class="mb-8 hidden">
+						<div id="resultsContainer" class="space-y-4">
+							<!-- Results will be populated here -->
+						</div>
+					</div>
+					
+					<!-- Content Grid -->
+					<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Footer -->
+		<Footer />
+		
+		<script src="/js/search.js" is:inline></script>
+	</body>
+</html>
