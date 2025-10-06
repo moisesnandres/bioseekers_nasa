@@ -19,12 +19,12 @@ import Footer from '../components/Footer.astro';
 	<body class="space-container text-white overflow-x-hidden min-h-screen overflow-y-auto">
 		<div class="relative min-h-screen flex flex-col">
 			<!-- Header -->
-			<div class="flex items-center justify-between p-6 relative z-20">
+			<div class="flex items-center justify-between p-4 lg:p-6 relative z-20">
 				<a href="/" class="flex items-center gap-2 text-white hover:text-[#FFE500] transition-colors cursor-pointer">
 					<svg width="20" height="20" viewBox="0 0 20 20" fill="none">
 						<path d="M12.5 15L7.5 10L12.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 					</svg>
-					<span>Go back</span>
+					<span class="text-sm lg:text-base">Go back</span>
 				</a>
 			</div>
 			<!-- Background Elements -->
@@ -32,51 +32,51 @@ import Footer from '../components/Footer.astro';
 			<div class="absolute bottom-0 left-0 w-full h-[60%] bg-grid-pattern animate-grid-move"></div>
 			<div class="absolute inset-0 bg-orbital-lines"></div>
 			<!-- Main Content -->
-			<div class="content-container flex-1 flex flex-col justify-center items-center px-6 relative z-10">
-				<div class="text-center mb-12">
-					<h2 class="space-title text-[#FFE500] mb-4">Select your profile</h2>
-					<p class="space-body text-white">Let's personalized your search</p>
+			<div class="content-container flex-1 flex flex-col justify-center items-center px-4 sm:px-6 lg:px-8 relative z-10">
+				<div class="text-center mb-8 lg:mb-12">
+					<h2 class="space-title text-[#FFE500] mb-4 text-xl lg:text-2xl">Select your profile</h2>
+					<p class="space-body text-white text-sm lg:text-base">Let's personalized your search</p>
 				</div>
 				<!-- Profile Cards -->
-				<div class="w-full max-w-md space-y-4">
+				<div class="w-full max-w-md space-y-3 lg:space-y-4">
 					<!-- Scientists Profile -->
-					<a href="/dashboard" class="block w-full">
-						<div class="bg-gradient-to-r from-[#1a1a2e] to-[#16213e] border-2 border-[#00d4ff] rounded-lg p-6 cursor-pointer hover:border-[#FFE500] hover:scale-105 transition-all duration-300">
-							<div class="flex items-center gap-4">
-								<div class="w-16 h-16 flex-shrink-0">
+					<a href="/search" class="block w-full">
+						<div class="bg-gradient-to-r from-[#1a1a2e] to-[#16213e] border-2 border-[#00d4ff] rounded-lg p-4 lg:p-6 cursor-pointer hover:border-[#FFE500] hover:scale-105 transition-all duration-300">
+							<div class="flex items-center gap-3 lg:gap-4">
+								<div class="w-12 h-12 lg:w-16 lg:h-16 flex-shrink-0">
 									<img src="/images/scientist.png" alt="Scientist" class="w-full h-full object-cover rounded-full border-2 border-[#FFE500]" />
 								</div>
 								<div class="flex-1">
-									<h3 class="text-xl font-bold text-white mb-2">Scientists</h3>
-									<p class="text-sm text-gray-300">Generate new hypotheses and uncover hidden insights in NASA bioscience data.</p>
+									<h3 class="text-lg lg:text-xl font-bold text-white mb-1 lg:mb-2">Scientists</h3>
+									<p class="text-xs lg:text-sm text-gray-300">Generate new hypotheses and uncover hidden insights in NASA bioscience data.</p>
 								</div>
 							</div>
 						</div>
 					</a>
 					<!-- Manager Profile -->
-					<a href="/dashboard" class="block w-full">
-						<div class="bg-gradient-to-r from-[#1a1a2e] to-[#16213e] border-2 border-[#00d4ff] rounded-lg p-6 cursor-pointer hover:border-[#FFE500] hover:scale-105 transition-all duration-300">
-							<div class="flex items-center gap-4">
-								<div class="w-16 h-16 flex-shrink-0">
+					<a href="/search" class="block w-full">
+						<div class="bg-gradient-to-r from-[#1a1a2e] to-[#16213e] border-2 border-[#00d4ff] rounded-lg p-4 lg:p-6 cursor-pointer hover:border-[#FFE500] hover:scale-105 transition-all duration-300">
+							<div class="flex items-center gap-3 lg:gap-4">
+								<div class="w-12 h-12 lg:w-16 lg:h-16 flex-shrink-0">
 									<img src="/images/manager.png" alt="Manager" class="w-full h-full object-cover rounded-full border-2 border-[#FFE500]" />
 								</div>
 								<div class="flex-1">
-									<h3 class="text-xl font-bold text-white mb-2">Manager</h3>
-									<p class="text-sm text-gray-300">Identify investment opportunities and track emerging areas of scientific progress.</p>
+									<h3 class="text-lg lg:text-xl font-bold text-white mb-1 lg:mb-2">Manager</h3>
+									<p class="text-xs lg:text-sm text-gray-300">Identify investment opportunities and track emerging areas of scientific progress.</p>
 								</div>
 							</div>
 						</div>
 					</a>
 					<!-- Mission Architects Profile -->
-					<a href="/dashboard" class="block w-full">
-						<div class="bg-gradient-to-r from-[#1a1a2e] to-[#16213e] border-2 border-[#00d4ff] rounded-lg p-6 cursor-pointer hover:border-[#FFE500] hover:scale-105 transition-all duration-300">
-							<div class="flex items-center gap-4">
-								<div class="w-16 h-16 flex-shrink-0">
+					<a href="/search" class="block w-full">
+						<div class="bg-gradient-to-r from-[#1a1a2e] to-[#16213e] border-2 border-[#00d4ff] rounded-lg p-4 lg:p-6 cursor-pointer hover:border-[#FFE500] hover:scale-105 transition-all duration-300">
+							<div class="flex items-center gap-3 lg:gap-4">
+								<div class="w-12 h-12 lg:w-16 lg:h-16 flex-shrink-0">
 									<img src="/images/astronaut_with_flag.png" alt="Mission Architect" class="w-full h-full object-cover rounded-full border-2 border-[#FFE500]" />
 								</div>
 								<div class="flex-1">
-									<h3 class="text-xl font-bold text-white mb-2">Mission Architects</h3>
-									<p class="text-sm text-gray-300">Explore bioscience findings that enable safer, more efficient Moon and Mars missions.</p>
+									<h3 class="text-lg lg:text-xl font-bold text-white mb-1 lg:mb-2">Mission Architects</h3>
+									<p class="text-xs lg:text-sm text-gray-300">Explore bioscience findings that enable safer, more efficient Moon and Mars missions.</p>
 								</div>
 							</div>
 						</div>

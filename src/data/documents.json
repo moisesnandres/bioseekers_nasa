@@ -1,0 +1,100 @@
+{
+  "documents": [
+    {
+      "id": "1",
+      "title": "Microgravity Effects on Plant Growth",
+      "author": "Dr. Sarah Johnson",
+      "date": "2024-01-15",
+      "type": "Research Paper",
+      "category": "Botany",
+      "summary": "Comprehensive study on how microgravity affects plant development and growth patterns in space environments.",
+      "tags": ["microgravity", "plants", "space", "botany"],
+      "downloads": 1247,
+      "pages": 23
+    },
+    {
+      "id": "2",
+      "title": "Radiation Shielding for Mars Missions",
+      "author": "Dr. Michael Chen",
+      "date": "2024-01-10",
+      "type": "Technical Report",
+      "category": "Engineering",
+      "summary": "Analysis of radiation protection strategies for long-duration Mars missions and their biological implications.",
+      "tags": ["radiation", "mars", "shielding", "engineering"],
+      "downloads": 892,
+      "pages": 18
+    },
+    {
+      "id": "3",
+      "title": "Human Physiology in Zero Gravity",
+      "author": "Dr. Emily Rodriguez",
+      "date": "2024-01-08",
+      "type": "Research Paper",
+      "category": "Physiology",
+      "summary": "Long-term effects of zero gravity on human muscle mass, bone density, and cardiovascular health.",
+      "tags": ["physiology", "zero-gravity", "health", "space"],
+      "downloads": 1563,
+      "pages": 31
+    },
+    {
+      "id": "4",
+      "title": "Space Food Production Systems",
+      "author": "Dr. James Wilson",
+      "date": "2024-01-05",
+      "type": "Technical Report",
+      "category": "Agriculture",
+      "summary": "Sustainable food production methods for extended space missions and lunar colonies.",
+      "tags": ["food", "agriculture", "sustainability", "space"],
+      "downloads": 743,
+      "pages": 27
+    },
+    {
+      "id": "5",
+      "title": "Psychological Effects of Space Isolation",
+      "author": "Dr. Lisa Thompson",
+      "date": "2024-01-03",
+      "type": "Research Paper",
+      "category": "Psychology",
+      "summary": "Mental health considerations and coping strategies for astronauts during long-duration missions.",
+      "tags": ["psychology", "isolation", "mental-health", "astronauts"],
+      "downloads": 1089,
+      "pages": 19
+    },
+    {
+      "id": "6",
+      "title": "Water Recycling in Space Habitats",
+      "author": "Dr. Robert Kim",
+      "date": "2024-01-01",
+      "type": "Technical Report",
+      "category": "Engineering",
+      "summary": "Advanced water purification and recycling systems for closed-loop space environments.",
+      "tags": ["water", "recycling", "habitats", "engineering"],
+      "downloads": 634,
+      "pages": 22
+    },
+    {
+      "id": "7",
+      "title": "Space Medicine Protocols",
+      "author": "Dr. Amanda Davis",
+      "date": "2023-12-28",
+      "type": "Medical Guidelines",
+      "category": "Medicine",
+      "summary": "Emergency medical procedures and healthcare protocols for space missions.",
+      "tags": ["medicine", "emergency", "protocols", "healthcare"],
+      "downloads": 1456,
+      "pages": 35
+    },
+    {
+      "id": "8",
+      "title": "Lunar Agriculture Feasibility Study",
+      "author": "Dr. Carlos Martinez",
+      "date": "2023-12-25",
+      "type": "Research Paper",
+      "category": "Agriculture",
+      "summary": "Potential for growing crops on the Moon using lunar regolith and controlled environments.",
+      "tags": ["lunar", "agriculture", "regolith", "crops"],
+      "downloads": 987,
+      "pages": 26
+    }
+  ]
+}
