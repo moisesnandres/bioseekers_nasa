@@ -1,8 +1,8 @@
 ---
 import Footer from '../components/Footer.astro';
-import documentsData from '../data/documents.json';
+import documentsData from '../data/documents_2.json';
 
-const documents = documentsData.documents;
+const documents = documentsData.results;
 ---
 
 <html lang="en">
@@ -116,33 +116,30 @@ const documents = documentsData.documents;
 								<div class="flex justify-between items-start mb-4">
 									<div class="flex-1">
 										<h3 class="text-lg font-semibold text-white mb-2 line-clamp-2">{doc.title}</h3>
-										<p class="text-sm text-gray-400 mb-2">by {doc.author}</p>
+										<p class="text-sm text-gray-400 mb-2">Score: {(doc.score * 100).toFixed(1)}%</p>
 									</div>
 									<div class="ml-4 flex-shrink-0">
 										<span class="text-xs bg-[#FFE500]/20 text-[#FFE500] px-2 py-1 rounded">
-											{doc.type}
+											{doc.chunk_type}
 										</span>
 									</div>
 								</div>
 								
-								<!-- Document Summary -->
-								<p class="text-gray-300 text-sm mb-4 line-clamp-3">{doc.summary}</p>
+								<!-- Document Content -->
+								<p class="text-gray-300 text-sm mb-4 line-clamp-3">{doc.chunk_content.substring(0, 200)}...</p>
 								
 								<!-- Document Meta -->
 								<div class="flex flex-wrap gap-2 mb-4">
-									<span class="text-xs bg-[#333] text-gray-300 px-2 py-1 rounded">{doc.category}</span>
-									{doc.tags.slice(0, 2).map((tag) => (
-										<span class="text-xs bg-[#FFE500]/10 text-[#FFE500] px-2 py-1 rounded">
-											{tag}
-										</span>
-									))}
+									<span class="text-xs bg-[#333] text-gray-300 px-2 py-1 rounded">Research</span>
+									<span class="text-xs bg-[#FFE500]/10 text-[#FFE500] px-2 py-1 rounded">
+										{Math.round(doc.score * 100)}% match
+									</span>
 								</div>
 								
 								<!-- Document Stats -->
 								<div class="flex justify-between items-center text-xs text-gray-500 mb-4">
-									<span>{doc.pages} pages</span>
-									<span>{doc.downloads.toLocaleString()} downloads</span>
-									<span>{new Date(doc.date).toLocaleDateString()}</span>
+									<span>Chunk ID: {doc.chunk_uuid.substring(0, 8)}...</span>
+									<span>Type: {doc.chunk_type}</span>
 								</div>
 								
 								<!-- Action Button -->

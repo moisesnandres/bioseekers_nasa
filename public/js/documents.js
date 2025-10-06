@@ -80,19 +80,19 @@ function initializeGraph() {
 	// Clear previous graph
 	svg.innerHTML = '';
 	
-	// Enhanced document data with relationships
+	// Enhanced document data with relationships - using documents_2.json structure
 	const documents = [
 		{
-			id: "1",
-			title: "Microgravity Effects on Plant Growth",
+			id: "c35df26f-e53d-4126-9f8a-d3e11327151a",
+			title: "Plant Adaptations to Extreme Environments and Their Astrobiological Implications",
 			author: "Dr. Sarah Johnson",
-			category: "Botany",
-			tags: ["microgravity", "plants", "space", "botany"],
-			relatedAuthors: ["Dr. James Wilson", "Dr. Carlos Martinez"],
-			citations: 1247,
+			category: "Astrobiology",
+			tags: ["plant adaptations", "extreme environments", "astrobiology"],
+			relatedAuthors: ["Dr. Michael Chen", "Dr. Emily Rodriguez"],
+			citations: 156,
 			year: 2024,
-			keywords: ["gravitropism", "root development", "photosynthesis"],
-			relatedTopics: ["space agriculture", "plant biology", "zero gravity"]
+			keywords: ["plant adaptations", "extreme environments", "astrobiology", "space agriculture"],
+			relatedTopics: ["space agriculture", "plant physiology", "extreme environments"]
 		},
 		{
 			id: "2", 

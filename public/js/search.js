@@ -53,24 +53,17 @@ function handleSearch() {
 	searchButton.disabled = true;
 	// Simulate API request delay
 	setTimeout(() => {
-		// Simulate the API response
+		// Simulate the API response using documents_2.json structure
 		const mockResponse = {
 			"count": 6,
 			"results": [
 				{
-					"document_uuid": "1",
-					"title": "Microgravity Effects on Plant Growth",
-					"author": "Dr. Sarah Johnson",
-					"date": "2024-01-15",
-					"type": "Research Paper",
-					"category": "Botany",
-					"summary": "Comprehensive study on how microgravity affects plant development and growth patterns in space environments. This research provides crucial insights for future space agriculture.",
-					"tags": ["microgravity", "plants", "space", "botany"],
-					"downloads": 1247,
-					"pages": 23,
-					"chunk_content": "Microgravity significantly impacts plant root development, causing altered gravitropic responses and modified growth patterns compared to Earth-based cultivation.",
-					"chunk_type": "text_chunk",
-					"score": 0.916
+					"chunk_uuid": "c35df26f-e53d-4126-9f8a-d3e11327151a",
+					"title": "Plant Adaptations to Extreme Environments and Their Astrobiological Implications",
+					"chunk_content": "Title: Plant Adaptations to Extreme Environments and Their Astrobiological Implications...",
+					"chunk_s3_path": "https://bioseekersbucket.s3.us-east-2.amazonaws.com/chunks/Plant Adaptations to Extreme Environments and Their Astrobiological Implications/Plant Adaptations to Extreme Environments and Their Astrobiological Implications_3.txt",
+					"chunk_type": "text",
+					"score": 0.6452687138030203
 				},
 				{
 					"document_uuid": "2",
@@ -175,23 +168,24 @@ function displaySearchResults(data) {
 				<div class="flex justify-between items-start mb-4">
 					<div class="flex-1">
 						<h3 class="text-lg font-semibold text-white mb-2 line-clamp-2">${result.title}</h3>
-						<p class="text-sm text-gray-400 mb-2">by ${result.author}</p>
+						<p class="text-sm text-gray-400 mb-2">Score: ${(result.score * 100).toFixed(1)}%</p>
 					</div>
 					<div class="ml-4 flex-shrink-0">
 						<span class="text-xs text-[#FFE500] bg-[#FFE500]/10 px-2 py-1 rounded">
-							${(result.score * 100).toFixed(1)}% match
+							${result.chunk_type}
 						</span>
 					</div>
 				</div>
 				
-				<!-- Document Summary -->
-				<p class="text-gray-300 text-sm mb-4 line-clamp-3">${result.summary}</p>
+				<!-- Document Content -->
+				<p class="text-gray-300 text-sm mb-4 line-clamp-3">${result.chunk_content.substring(0, 200)}...</p>
 				
-				<!-- Tags -->
+				<!-- Document Meta -->
 				<div class="flex flex-wrap gap-2">
-					${result.tags.map(tag => 
-						`<span class="text-xs bg-[#FFE500]/10 text-[#FFE500] px-2 py-1 rounded">${tag}</span>`
-					).join('')}
+					<span class="text-xs bg-[#333] text-gray-300 px-2 py-1 rounded">Research</span>
+					<span class="text-xs bg-[#FFE500]/10 text-[#FFE500] px-2 py-1 rounded">
+						${Math.round(result.score * 100)}% match
+					</span>
 				</div>
 			`;
 			resultsContainer.appendChild(resultElement);

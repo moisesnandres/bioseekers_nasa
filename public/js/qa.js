@@ -191,15 +191,15 @@ Would you like me to dive deeper into any specific aspect of space agriculture?
 Related Projects:
 <div class="flex justify-between items-center p-2 bg-[#1a1a2e] rounded border border-[#333]">
 	<div>
-		<h5 class="text-sm font-medium text-white">Microgravity Effects on Plant Growth</h5>
-		<p class="text-xs text-gray-400">by Dr. Sarah Johnson</p>
+		<h5 class="text-sm font-medium text-white">Plant Adaptations to Extreme Environments and Their Astrobiological Implications</h5>
+		<p class="text-xs text-gray-400">Research Paper</p>
 	</div>
 	<span class="text-xs text-[#FFE500] bg-[#FFE500]/10 px-2 py-1 rounded">92% relevant</span>
 </div>
 <div class="flex justify-between items-center p-2 bg-[#1a1a2e] rounded border border-[#333]">
 	<div>
-		<h5 class="text-sm font-medium text-white">Space Food Production Systems</h5>
-		<p class="text-xs text-gray-400">by Dr. James Wilson</p>
+		<h5 class="text-sm font-medium text-white">Sustainable Space Exploration Through Microbial Power Harnessing Strategies</h5>
+		<p class="text-xs text-gray-400">Research Paper</p>
 	</div>
 	<span class="text-xs text-[#FFE500] bg-[#FFE500]/10 px-2 py-1 rounded">87% relevant</span>
 </div>`;
@@ -221,22 +221,22 @@ The research is ongoing to develop better protection for long-duration missions 
 Related Projects:
 <div class="flex justify-between items-center p-2 bg-[#1a1a2e] rounded border border-[#333]">
 	<div>
-		<h5 class="text-sm font-medium text-white">Radiation Shielding for Mars Missions</h5>
-		<p class="text-xs text-gray-400">by Dr. Michael Chen</p>
+		<h5 class="text-sm font-medium text-white">Permafrost-Mimicked Conditions Foster Carnobacterium Growth Implications for Martian Microbiology</h5>
+		<p class="text-xs text-gray-400">Research Paper</p>
 	</div>
 	<span class="text-xs text-[#FFE500] bg-[#FFE500]/10 px-2 py-1 rounded">94% relevant</span>
 </div>
 <div class="flex justify-between items-center p-2 bg-[#1a1a2e] rounded border border-[#333]">
 	<div>
-		<h5 class="text-sm font-medium text-white">Human Physiology in Zero Gravity</h5>
-		<p class="text-xs text-gray-400">by Dr. Emily Rodriguez</p>
+		<h5 class="text-sm font-medium text-white">Microbial Existence in Controlled Habitats Under Space Conditions</h5>
+		<p class="text-xs text-gray-400">Research Paper</p>
 	</div>
 	<span class="text-xs text-[#FFE500] bg-[#FFE500]/10 px-2 py-1 rounded">89% relevant</span>
 </div>
 <div class="flex justify-between items-center p-2 bg-[#1a1a2e] rounded border border-[#333]">
 	<div>
-		<h5 class="text-sm font-medium text-white">Space Medicine Protocols</h5>
-		<p class="text-xs text-gray-400">by Dr. Amanda Davis</p>
+		<h5 class="text-sm font-medium text-white">Microbial Existence in Controlled Habitats Under Space Conditions</h5>
+		<p class="text-xs text-gray-400">Research Paper</p>
 	</div>
 	<span class="text-xs text-[#FFE500] bg-[#FFE500]/10 px-2 py-1 rounded">85% relevant</span>
 </div>`;
@@ -258,22 +258,22 @@ The research shows that fresh food not only provides nutrition but also psycholo
 Related Projects:
 <div class="flex justify-between items-center p-2 bg-[#1a1a2e] rounded border border-[#333]">
 	<div>
-		<h5 class="text-sm font-medium text-white">Space Food Production Systems</h5>
-		<p class="text-xs text-gray-400">by Dr. James Wilson</p>
+		<h5 class="text-sm font-medium text-white">Sustainable Space Exploration Through Microbial Power Harnessing Strategies</h5>
+		<p class="text-xs text-gray-400">Research Paper</p>
 	</div>
 	<span class="text-xs text-[#FFE500] bg-[#FFE500]/10 px-2 py-1 rounded">96% relevant</span>
 </div>
 <div class="flex justify-between items-center p-2 bg-[#1a1a2e] rounded border border-[#333]">
 	<div>
-		<h5 class="text-sm font-medium text-white">Lunar Agriculture Feasibility Study</h5>
-		<p class="text-xs text-gray-400">by Dr. Carlos Martinez</p>
+		<h5 class="text-sm font-medium text-white">In Situ Resource Utilization in Space Biomining Potential</h5>
+		<p class="text-xs text-gray-400">Research Paper</p>
 	</div>
 	<span class="text-xs text-[#FFE500] bg-[#FFE500]/10 px-2 py-1 rounded">91% relevant</span>
 </div>
 <div class="flex justify-between items-center p-2 bg-[#1a1a2e] rounded border border-[#333]">
 	<div>
-		<h5 class="text-sm font-medium text-white">Microgravity Effects on Plant Growth</h5>
-		<p class="text-xs text-gray-400">by Dr. Sarah Johnson</p>
+		<h5 class="text-sm font-medium text-white">Plant Adaptations to Extreme Environments and Their Astrobiological Implications</h5>
+		<p class="text-xs text-gray-400">Research Paper</p>
 	</div>
 	<span class="text-xs text-[#FFE500] bg-[#FFE500]/10 px-2 py-1 rounded">88% relevant</span>
 </div>`;
@@ -295,15 +295,15 @@ The research shows that these systems are essential for sustainable long-duratio
 Related Projects:
 <div class="flex justify-between items-center p-2 bg-[#1a1a2e] rounded border border-[#333]">
 	<div>
-		<h5 class="text-sm font-medium text-white">Water Recycling in Space Habitats</h5>
-		<p class="text-xs text-gray-400">by Dr. Robert Kim</p>
+		<h5 class="text-sm font-medium text-white">Phylogenomic Analysis of Novel Earth-Derived Bacteria from the International Space Station</h5>
+		<p class="text-xs text-gray-400">Research Paper</p>
 	</div>
 	<span class="text-xs text-[#FFE500] bg-[#FFE500]/10 px-2 py-1 rounded">98% relevant</span>
 </div>
 <div class="flex justify-between items-center p-2 bg-[#1a1a2e] rounded border border-[#333]">
 	<div>
-		<h5 class="text-sm font-medium text-white">Space Food Production Systems</h5>
-		<p class="text-xs text-gray-400">by Dr. James Wilson</p>
+		<h5 class="text-sm font-medium text-white">Sustainable Space Exploration Through Microbial Power Harnessing Strategies</h5>
+		<p class="text-xs text-gray-400">Research Paper</p>
 	</div>
 	<span class="text-xs text-[#FFE500] bg-[#FFE500]/10 px-2 py-1 rounded">82% relevant</span>
 </div>`;
@@ -325,22 +325,22 @@ The research is helping design better habitats and mission protocols for future 
 Related Projects:
 <div class="flex justify-between items-center p-2 bg-[#1a1a2e] rounded border border-[#333]">
 	<div>
-		<h5 class="text-sm font-medium text-white">Psychological Effects of Space Isolation</h5>
-		<p class="text-xs text-gray-400">by Dr. Lisa Thompson</p>
+		<h5 class="text-sm font-medium text-white">Microbial Existence in Controlled Habitats Under Space Conditions</h5>
+		<p class="text-xs text-gray-400">Research Paper</p>
 	</div>
 	<span class="text-xs text-[#FFE500] bg-[#FFE500]/10 px-2 py-1 rounded">95% relevant</span>
 </div>
 <div class="flex justify-between items-center p-2 bg-[#1a1a2e] rounded border border-[#333]">
 	<div>
-		<h5 class="text-sm font-medium text-white">Human Physiology in Zero Gravity</h5>
-		<p class="text-xs text-gray-400">by Dr. Emily Rodriguez</p>
+		<h5 class="text-sm font-medium text-white">Microbial Existence in Controlled Habitats Under Space Conditions</h5>
+		<p class="text-xs text-gray-400">Research Paper</p>
 	</div>
 	<span class="text-xs text-[#FFE500] bg-[#FFE500]/10 px-2 py-1 rounded">78% relevant</span>
 </div>
 <div class="flex justify-between items-center p-2 bg-[#1a1a2e] rounded border border-[#333]">
 	<div>
-		<h5 class="text-sm font-medium text-white">Space Medicine Protocols</h5>
-		<p class="text-xs text-gray-400">by Dr. Amanda Davis</p>
+		<h5 class="text-sm font-medium text-white">Microbial Existence in Controlled Habitats Under Space Conditions</h5>
+		<p class="text-xs text-gray-400">Research Paper</p>
 	</div>
 	<span class="text-xs text-[#FFE500] bg-[#FFE500]/10 px-2 py-1 rounded">73% relevant</span>
 </div>`;
@@ -361,22 +361,22 @@ I'd be happy to help you explore specific aspects of this topic. What particular
 Related Projects:
 <div class="flex justify-between items-center p-2 bg-[#1a1a2e] rounded border border-[#333]">
 	<div>
-		<h5 class="text-sm font-medium text-white">Microgravity Effects on Plant Growth</h5>
-		<p class="text-xs text-gray-400">by Dr. Sarah Johnson</p>
+		<h5 class="text-sm font-medium text-white">Plant Adaptations to Extreme Environments and Their Astrobiological Implications</h5>
+		<p class="text-xs text-gray-400">Research Paper</p>
 	</div>
 	<span class="text-xs text-[#FFE500] bg-[#FFE500]/10 px-2 py-1 rounded">85% relevant</span>
 </div>
 <div class="flex justify-between items-center p-2 bg-[#1a1a2e] rounded border border-[#333]">
 	<div>
-		<h5 class="text-sm font-medium text-white">Human Physiology in Zero Gravity</h5>
-		<p class="text-xs text-gray-400">by Dr. Emily Rodriguez</p>
+		<h5 class="text-sm font-medium text-white">Microbial Existence in Controlled Habitats Under Space Conditions</h5>
+		<p class="text-xs text-gray-400">Research Paper</p>
 	</div>
 	<span class="text-xs text-[#FFE500] bg-[#FFE500]/10 px-2 py-1 rounded">82% relevant</span>
 </div>
 <div class="flex justify-between items-center p-2 bg-[#1a1a2e] rounded border border-[#333]">
 	<div>
-		<h5 class="text-sm font-medium text-white">Space Food Production Systems</h5>
-		<p class="text-xs text-gray-400">by Dr. James Wilson</p>
+		<h5 class="text-sm font-medium text-white">Sustainable Space Exploration Through Microbial Power Harnessing Strategies</h5>
+		<p class="text-xs text-gray-400">Research Paper</p>
 	</div>
 	<span class="text-xs text-[#FFE500] bg-[#FFE500]/10 px-2 py-1 rounded">79% relevant</span>
 </div>`;
