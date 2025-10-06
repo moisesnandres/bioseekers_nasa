@@ -90,30 +90,45 @@ import Footer from '../components/Footer.astro';
 				<!-- Content -->
 				<div class="relative z-10 p-4 sm:p-6 lg:p-8">
 					<!-- Header -->
-					<div class="mb-6 lg:mb-8">
+					<div class="mb-6 lg:mb-8 w-full">
 						<h1 class="space-title text-[#FFE500] mb-4 text-xl lg:text-2xl">Do you want to deep your knowledge?</h1>
 						<p class="space-body text-gray-300 text-sm lg:text-base">Ask anything about NASA's bioscience research and get intelligent answers</p>
 					</div>
 					
-					<!-- Q&A Input Section -->
-					<div class="max-w-4xl">
-						<div class="bg-[#1a1a2e] border border-[#333] rounded-lg p-6 mb-6">
-							<div class="flex flex-col sm:flex-row gap-4">
-								<input
-									type="text"
-									placeholder="Ask anything..."
-									class="flex-1 p-4 bg-transparent border-2 border-white rounded-lg text-white placeholder-gray-400 focus:border-[#FFE500] focus:outline-none text-sm lg:text-base"
-								/>
-								<button class="space-button px-6 lg:px-8 py-4 flex-shrink-0 w-full sm:w-auto" id="askButton">
-									Ask Question
-								</button>
+					<!-- Chat Interface -->
+					<div class="w-full">
+						<!-- Chat Messages -->
+						<div id="chatContainer" class="bg-[#1a1a2e] border border-[#333] rounded-lg h-[calc(100vh-300px)] overflow-y-auto mb-4 p-4 space-y-4">
+							<!-- Welcome Message -->
+							<div class="flex items-start gap-3">
+								<div class="w-8 h-8 bg-[#00d4ff] rounded-full flex items-center justify-center flex-shrink-0">
+									<svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+										<path d="M21 15C21 15.5304 20.7893 16.0391 20.4142 16.4142C20.0391 16.7893 19.5304 17 19 17H7L3 21V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V15Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</div>
+								<div class="flex-1">
+									<div class="bg-[#0a0a1a] border border-[#333] rounded-lg p-3">
+										<p class="text-white text-sm">Hello! I'm your NASA Bioscience AI assistant. I can help you explore research papers, understand scientific concepts, and find connections between different studies. What would you like to know?</p>
+									</div>
+								</div>
 							</div>
 						</div>
 						
-						<!-- Q&A Results -->
-						<div id="qaResults" class="hidden">
-							<div id="qaContainer" class="space-y-4">
-								<!-- Q&A results will be populated here -->
+						<!-- Chat Input -->
+						<div class="bg-[#1a1a2e] border border-[#333] rounded-lg p-4">
+							<div class="flex gap-3">
+								<input
+									type="text"
+									placeholder="Ask me anything about NASA bioscience research..."
+									class="flex-1 p-3 bg-transparent border border-[#555] rounded-lg text-white placeholder-gray-400 focus:border-[#FFE500] focus:outline-none text-sm"
+									id="chatInput"
+								/>
+								<button class="bg-[#FFE500] text-black px-4 py-3 rounded-lg font-medium hover:bg-[#FFD700] transition-colors flex items-center gap-2" id="sendButton">
+									<svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+										<path d="M22 2L11 13M22 2L15 22L11 13M22 2L2 9L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+									Send
+								</button>
 							</div>
 						</div>
 					</div>
