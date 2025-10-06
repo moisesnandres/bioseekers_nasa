@@ -181,11 +181,21 @@ function displaySearchResults(data) {
 				<p class="text-gray-300 text-sm mb-4 line-clamp-3">${result.chunk_content.substring(0, 200)}...</p>
 				
 				<!-- Document Meta -->
-				<div class="flex flex-wrap gap-2">
+				<div class="flex flex-wrap gap-2 mb-4">
 					<span class="text-xs bg-[#333] text-gray-300 px-2 py-1 rounded">Research</span>
 					<span class="text-xs bg-[#FFE500]/10 text-[#FFE500] px-2 py-1 rounded">
 						${Math.round(result.score * 100)}% match
 					</span>
+				</div>
+				
+				<!-- Action Buttons -->
+				<div class="flex gap-2">
+					<button class="flex-1 space-button py-2 text-sm">
+						View Document
+					</button>
+					<a href="/data/genome.pdf" download="NASA_Genome_Research.pdf" class="flex-1 bg-[#00d4ff] text-black py-2 px-3 rounded-lg font-medium hover:bg-[#00b8e6] transition-colors text-center text-sm">
+						Download PDF
+					</a>
 				</div>
 			`;
 			resultsContainer.appendChild(resultElement);

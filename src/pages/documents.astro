@@ -142,10 +142,15 @@ const documents = documentsData.results;
 									<span>Type: {doc.chunk_type}</span>
 								</div>
 								
-								<!-- Action Button -->
-								<button class="w-full space-button py-2 text-sm">
-									View Document
-								</button>
+								<!-- Action Buttons -->
+								<div class="flex gap-2">
+									<button class="flex-1 space-button py-2 text-sm">
+										View Document
+									</button>
+									<a href="/data/genome.pdf" download="NASA_Genome_Research.pdf" class="flex-1 bg-[#00d4ff] text-black py-2 px-3 rounded-lg font-medium hover:bg-[#00b8e6] transition-colors text-center text-sm">
+										Download PDF
+									</a>
+								</div>
 							</div>
 						))}
 					</div>
